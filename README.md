@@ -9,9 +9,14 @@
 # Decisions
 
 - CSSNext with PostCSS rather than preprocessor
-- CommonJS for JS file management with browserify to compile
+  - new language features that are or will be part of the final specification
+  - including variables, custom media queries, custom selectors
+- CommonJS for JS module management with browserify to compile
+  - ES6 JS module management in terms of syntax is similar to CommonJS
 - jQuery is used
 - CSS and JS files are concatenated and minified
 - Karma as test runner
-- Mocha with Chai as test framework and assertion library
-- npm as task manager instead of Grunt or Gulp
+- Mocha as test framework
+- Chai as assertion library
+  - supports both TDD and BDD assertions 
+- npm as task manager and runner instead of Grunt or Gulp
