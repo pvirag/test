@@ -1,0 +1,11 @@
+/**
+ * Header declarations
+ */
+
+#wrap > header {
+    padding-bottom: 0;
+}
+#wrap > footer {
+    border-top: 1px solid #ccc;
+    text-align: center;
+}

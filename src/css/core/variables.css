@@ -1,0 +1,44 @@
+/**
+ * Variables and custom queries
+ */
+
+:root {
+    --gutter-s: 15px;
+    --gutter-m: 25px;
+    --gutter-l: 30px;
+    --gutter-content-s: 15px;
+    --gutter-content-l: 20px;
+}
+
+/**
+ * Small screens
+ * phones and handheld
+ */
+
+@custom-media --small-screen screen and (max-width: 767px);
+
+/**
+ * iPad portrait and up
+ */
+
+@custom-media --larger-than-small-screen screen and (min-width: 768px);
+
+/**
+ * iPad portrait only
+ */
+
+@custom-media --medium-screen screen and (min-width: 768px) and (max-width: 1023px);
+
+/**
+ * iPad landscape and desktop
+ */
+
+@custom-media --large-screen screen and (min-width: 1024px);
+
+/**
+ * 2x (highDPI) devices
+ */
+
+@custom-media --2x-screen only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx),
+only screen and (min-resolution: 192dpi);

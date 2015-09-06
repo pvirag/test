@@ -1,0 +1,42 @@
+/**
+ * Info box (aside)
+ */
+
+aside.content > * {
+    padding: calc(var(--gutter-s) / 2) 0;
+}
+#ratings:before {
+    content: "\2605";
+}
+#rooms-available:before {
+    content: "\2302";
+}
+#ratings:before,
+#rooms-available:before {
+    font-size: 1.4em;
+    margin-right: 10px;
+}
+
+/**
+ * Small screens
+ * phones and handheld
+ */
+
+@media (--small-screen) {
+    aside.content {
+        padding: 0;
+    }
+}
+
+/**
+ * iPad portrait and up
+ */
+
+@media (--larger-than-small-screen) {
+    aside.content {
+        text-align: center;
+        border: 1px dotted #ccc;
+        background-color: #f0ffe0;
+        border-radius: 5px;
+    }
+}

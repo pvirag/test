@@ -1,0 +1,26 @@
+/**
+ * Listing specific settings
+ */
+
+.facilities.content {
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    background-color: #fcfcfc;
+}
+.facilities h3 {
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+.facilities ul li:before {
+    content: "\2611";
+    font-size: 1.4em;
+    margin-right: 3px;
+}
+.facilities ul * + * {
+    margin-top: 1em;
+    padding-right: 5px;
+}
+.facilities ul + ul:not(:last-of-type) {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,39 @@
+/**
+ * Side navigation
+ */
+
+ul.room-list {
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+}
+ul.room-list * {
+    margin-top: 0;
+    padding: var(--gutter-content-s);
+    cursor: pointer;
+}
+ul.room-list li:hover,
+ul.room-list li.active {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: calc(var(--gutter-content-s) -1px);
+    padding-bottom: calc(var(--gutter-content-s) -1px);
+}
+ul.room-list li.active {
+    border-color: #ff9933;
+    color: #ff9933;
+}
+ul.room-list li:first-of-type:hover,
+ul.room-list li:first-of-type.active {
+    border-top: none;
+}
+ul.room-list li:last-of-type:hover,
+ul.room-list li:last-of-type.active {
+    border-bottom: none;
+}
+ul.room-list li:hover:after,
+ul.room-list li.active:after {
+    content: "\00BB";
+    margin-left: 5px;
+    font-size: 1.4em;
+}

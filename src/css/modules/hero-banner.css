@@ -1,0 +1,43 @@
+/**
+ * Hero banner main detail page declarations
+ */
+
+#property-details {
+    margin-top: 0;
+}
+#hero-banner {
+    padding: var(--gutter-s);
+    background-color: #99ccff;
+    /*background-image: some-image;*/
+}
+#hero-banner h1 {
+    line-height: 1;
+}
+
+/**
+ * iPad portrait only
+ */
+
+@media (--medium-screen) {
+    #hero-banner {
+        padding: calc(var(--gutter-m) * 4) var(--gutter-m);
+    }
+}
+
+/**
+ * iPad portrait and up
+ */
+
+@media (--larger-than-small-screen) {
+    #hero-banner {
+        padding: calc(var(--gutter-l) * 4) var(--gutter-l);
+    }
+}
+
+/**
+ * 2x (highDPI) devices
+ */
+
+@media (--2x-screen) {
+    /* hight resolution background image */
+}

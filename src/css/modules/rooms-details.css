@@ -1,0 +1,32 @@
+/**
+ * Rooms details
+ */
+
+#rooms-details,
+#rooms-details .col-3-4 {
+    padding-right: 0;
+}
+.friends-info {
+    border: 1px dotted #ccc;
+    padding: var(--gutter-content-s);
+    background-color: #ccffcc;
+}
+.friends-info:before {
+    content: "\2139";
+    font-size: 1.4em;
+    margin-right: 5px;
+}
+
+/**
+ * iPad portrait and up
+ */
+
+@media (--larger-than-small-screen) {
+    .friends-info {
+        padding: var(--gutter-content-l);
+    }
+    #rooms-details header {
+        padding-bottom: var(--gutter-content-l);
+        border-bottom: 1px solid #ccc;
+    }
+}

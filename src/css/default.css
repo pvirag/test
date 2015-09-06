@@ -1,0 +1,11 @@
+@import "vendor/normalize.css";
+@import "core/variables.css";
+@import "core/base.css";
+@import "core/grid.css";
+@import "modules/header-footer.css";
+@import "modules/breadcrumps.css";
+@import "modules/hero-banner.css";
+@import "modules/info-box.css";
+@import "modules/side-nav.css";
+@import "modules/rooms-details.css";
+@import "modules/facilities.css";

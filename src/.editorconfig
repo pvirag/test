@@ -1,0 +1,18 @@
+# WorldRemit Front-end development editor config
+# for details see http://editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailng_white_space = true
+indent_style = space
+indent_size = 4
+
+# Set indenting for package.json
+[package.json]
+indent_size = 2

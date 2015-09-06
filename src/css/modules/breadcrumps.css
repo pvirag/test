@@ -1,0 +1,37 @@
+/**
+ * Breadcrumps navigation
+ */
+
+#breadcrumps ul {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+#breadcrumps li {
+    float: left;
+    margin-top: 0;
+    padding: calc(var(--gutter-s) / 3);
+}
+#breadcrumps li:after {
+    content: "\3009";
+}
+#breadcrumps li.active {
+    border-color: #ff9933;
+}
+#breadcrumps li.active a,
+#breadcrumps li.active:after {
+    color: #ff9933;
+}
+#breadcrumps li a:any-link {
+    text-decoration: none;
+}
+
+/**
+ * iPad portrait and up
+ */
+
+@media (--larger-than-small-screen) {
+    #breadcrumps li {
+        padding: calc(var(--gutter-s) / 2);
+    }
+}
