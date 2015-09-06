@@ -4,6 +4,7 @@
 - run `npm install`
 - for dev run `npm run dev`
 - for build + test run `npm run build`
+- preview `index.html` in browser (tested on latest Safari Mac and Chrome Mac)
 
 # Decisions
 
