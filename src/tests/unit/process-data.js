@@ -19,7 +19,7 @@ var tests = function() {
                 }
             );
 
-            it('Object\'s key \'test\' is \'betty\'', function() {
+            it('Object\'s value for key \'test\' is \'betty\'', function() {
                     var response = processData(customData)
                     assert.deepEqual(response.test, 'betty');
                 }

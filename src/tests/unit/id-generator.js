@@ -10,13 +10,13 @@ var tests = function() {
     describe(
         'GENERATE ID',
         function() {
-            it('Do not run no string',
+            it('Do not run if no string is passed in',
                 function() {
                     assert.isUndefined(idGenerator());
                 }
             );
 
-            it('Do not run if empty an string',
+            it('Do not run if empty an string is passed in',
                 function() {
                     assert.isUndefined(idGenerator(''));
                 }

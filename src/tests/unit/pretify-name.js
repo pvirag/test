@@ -10,13 +10,13 @@ var tests = function() {
     describe(
         'PRETIFY NAME',
         function() {
-            it('Do not run no string',
+            it('Do not run if no string is passed in',
                 function() {
                     assert.isUndefined(pretifyName());
                 }
             );
 
-            it('Do not run if empty an string',
+            it('Do not run if empty string is passed in',
                 function() {
                     assert.isUndefined(pretifyName(''));
                 }
